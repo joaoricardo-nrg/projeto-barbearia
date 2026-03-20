@@ -1,209 +1,244 @@
-  /* ===== RESET & BASE ===== */
-  * {                                                                                                                                                                                        
-    margin: 0;                                                                                                                                                                               
-    padding: 0;
-    box-sizing: border-box;                                                                                                                                                                  
-  }                                                         
-                                                                                                                                                                                             
-  body {                                                    
-    font-family: Arial, sans-serif;
-    color: #333;
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  /* ===== CONTAINER ===== */                                                                                                                                                                
-  .container {                                                                                                                                                                               
-    max-width: 1100px;                                                                                                                                                                       
-    margin: 0 auto;                                                                                                                                                                          
-    padding: 0 20px;                                                                                                                                                                         
-  }                                                                                                                                                                                          
-                                                            
-  /* ===== HEADER ===== */                                                                                                                                                                   
-  .header {                                                 
-    background-color: #1a1a1a;                                                                                                                                                               
-    padding: 20px 0;                                        
-  }
-                                                                                                                                                                                             
-  .header .container {                                                                                                                                                                       
-    display: flex;                                                                                                                                                                           
-    justify-content: space-between;                                                                                                                                                          
-    align-items: center;                                    
-  }
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .logo {
-    color: #c8a97e;
-    font-size: 1.5rem;                                                                                                                                                                       
-  }
-                                                                                                                                                                                             
-  nav a {                                                   
-    color: #fff;
-    text-decoration: none;                                                                                                                                                                   
-    margin-left: 24px;                                                                                                                                                                       
-    font-size: 0.95rem;                                                                                                                                                                      
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  nav a:hover {                                                                                                                                                                              
-    color: #c8a97e;                                                                                                                                                                          
-  }                                                                                                                                                                                          
-                                                            
-  /* ===== HERO ===== */                                                                                                                                                                     
-  .hero {                                                   
-    background-color: #2c2c2c;
-    color: #fff;                                                                                                                                                                             
-    padding: 100px 0;                                                                                                                                                                        
-    text-align: center;                                                                                                                                                                      
-  }                                                                                                                                                                                          
-                                                            
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #c8a97e;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #c8a97e;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  color: #ccc;
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  background-color: #c8a97e;
+  color: #1a1a1a;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #b8966a;
+}
+
+/* ===== SERVIÇOS ===== */
+.servicos {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 32px 24px;
+  width: 280px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.card span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #c8a97e;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.sobre p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimentos {
+  padding: 80px 0;
+  background-color: #2c2c2c;
+  text-align: center;
+  color: #fff;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.depoimentos .card {
+  background-color: #3a3a3a;
+  border: none;
+  color: #fff;
+}
+
+.depoimentos .card p {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.depoimentos .card span {
+  font-size: 0.9rem;
+  color: #c8a97e;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
   .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;                                                                                                                                                                     
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  .hero p {                                                                                                                                                                                  
-    font-size: 1.1rem;                                      
-    margin-bottom: 32px;
-    color: #ccc;
-  }                                                                                                                                                                                          
-   
-  /* ===== BOTÃO ===== */                                                                                                                                                                    
-  .btn {                                                    
-    background-color: #c8a97e;
-    color: #1a1a1a;
-    padding: 14px 32px;                                                                                                                                                                      
-    border: none;
-    border-radius: 4px;                                                                                                                                                                      
-    font-size: 1rem;                                        
-    font-weight: bold;                                                                                                                                                                       
-    text-decoration: none;                                                                                                                                                                   
-    cursor: pointer;                                                                                                                                                                         
-    display: inline-block;                                                                                                                                                                   
-  }                                                         
-
-  .btn:hover {                                                                                                                                                                               
-    background-color: #b8966a;
-  }                                                                                                                                                                                          
-                                                            
-  /* ===== SERVIÇOS ===== */                                                                                                                                                                 
-  .servicos {                                               
-    padding: 80px 0;
-    background-color: #f9f9f9;                                                                                                                                                               
-    text-align: center;                                                                                                                                                                      
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  .servicos h2 {                                            
-    font-size: 2rem;
-    margin-bottom: 48px;
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  .cards {                                                                                                                                                                                   
-    display: flex;                                                                                                                                                                           
-    justify-content: center;                                
-    gap: 24px;
+    font-size: 1.8rem;
   }
-                                                                                                                                                                                             
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card {
-    background: #fff;                                                                                                                                                                        
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);                                                                                                                                                              
-    border-radius: 8px;                                                                                                                                                                      
-    padding: 32px 24px;                                                                                                                                                                      
-    width: 280px;                                                                                                                                                                            
-  }                                                                                                                                                                                          
-                                                            
-  .card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 12px;                                                                                                                                                                     
-  }
-                                                                                                                                                                                             
-  .card p {                                                 
-    color: #666;
-    margin-bottom: 16px;
+    width: 100%;
+    max-width: 340px;
   }
 
-  .card span {                                                                                                                                                                               
-    font-size: 1.4rem;
-    font-weight: bold;                                                                                                                                                                       
-    color: #c8a97e;                                         
-  }                                                                                                                                                                                          
-                                                            
-  /* ===== SOBRE ===== */                                                                                                                                                                    
-  .sobre {
-    padding: 80px 0;                                                                                                                                                                         
-    text-align: center;                                                                                                                                                                      
-  }
-                                                                                                                                                                                             
-  .sobre h2 {                                               
-    font-size: 2rem;
-    margin-bottom: 24px;                                                                                                                                                                     
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  .sobre p {                                                                                                                                                                                 
-    max-width: 600px;                                       
-    margin: 0 auto;                                                                                                                                                                          
-    color: #555;                                            
-    line-height: 1.7;
-  }                                                                                                                                                                                          
-   
-  /* ===== CONTATO ===== */                                                                                                                                                                  
-  .contato {                                                
-    padding: 80px 0;
-    background-color: #1a1a1a;
-    color: #fff;                                                                                                                                                                             
-    text-align: center;                                                                                                                                                                      
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  .contato h2 {                                             
-    font-size: 2rem;
-    margin-bottom: 32px;
-  }                                                                                                                                                                                          
-   
-  form {                                                                                                                                                                                     
-    display: flex;                                          
-    flex-direction: column;                                                                                                                                                                  
-    align-items: center;                                    
+  .header .container {
+    flex-direction: column;
     gap: 16px;
-  }                                                                                                                                                                                          
-   
-  form input {                                                                                                                                                                               
-    width: 100%;                                            
-    max-width: 400px;                                                                                                                                                                        
-    padding: 14px 16px;                                                                                                                                                                      
-    border: none;                                                                                                                                                                            
-    border-radius: 4px;                                                                                                                                                                      
-    font-size: 1rem;                                                                                                                                                                         
-  }                                                                                                                                                                                          
-                                                                                                                                                                                             
-  /* ===== FOOTER ===== */                                                                                                                                                                   
-  .footer {                                                 
-    background-color: #111;
-    color: #888;                                                                                                                                                                             
-    text-align: center;                                                                                                                                                                      
-    padding: 20px 0;                                                                                                                                                                         
-    font-size: 0.85rem;                                                                                                                                                                      
-  }                           
+    text-align: center;
+  }
 
-    /* ===== RESPONSIVO ===== */                                                                                                                                                               
-  @media (max-width: 768px) {                                                                                                                                                                
-                                                                                                                                                                                             
-    .hero h2 {                                                                                                                                                                               
-      font-size: 1.8rem;                                                                                                                                                                     
-    }                                                                                                                                                                                        
-                                                                                                                                                                                             
-    .cards {                                                                                                                                                                                 
-      flex-direction: column;                                                                                                                                                                
-      align-items: center;                                                                                                                                                                   
-    }                                                                                                                                                                                        
-                                                                                                                                                                                             
-    .card {                                                                                                                                                                                  
-      width: 100%;                                                                                                                                                                           
-      max-width: 340px;                                                                                                                                                                      
-    }                                                       
-                                                                                                                                                                                             
-    .header .container {                                                                                                                                                                     
-      flex-direction: column;                                                                                                                                                                
-      gap: 16px;                                                                                                                                                                             
-      text-align: center;                                                                                                                                                                    
-    }
-                                                                                                                                                                                             
-    nav a {                                                                                                                                                                                  
-      margin-left: 12px;
-    }                                                                                                                                                                                        
-  }      
+  nav a {
+    margin-left: 12px;
+  }
+}
