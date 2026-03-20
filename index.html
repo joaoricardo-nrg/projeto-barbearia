@@ -100,10 +100,16 @@
     <section id="contato" class="contato">
       <div class="container">
         <h2>Fale com a gente</h2>
-        <form>
-          <input type="text" placeholder="Seu nome" required />
-          <input type="tel" placeholder="Seu WhatsApp" required />
-          <button type="submit" class="btn">Enviar</button>
+        <form id="form-contato">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="tel" id="telefone" placeholder="Seu WhatsApp" required />
+          <select id="servico">
+            <option value="">Selecione um serviço</option>
+            <option value="Corte">Corte — R$45</option>
+            <option value="Barba">Barba — R$35</option>
+            <option value="Corte + Barba">Corte + Barba — R$70</option>
+          </select>
+          <button type="submit" class="btn">Agendar pelo WhatsApp</button>
         </form>
       </div>
     </section>
@@ -114,5 +120,6 @@
         <p>© 2026 Barbearia do João — Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
